@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Racing Game</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div class="score">Score : 0</div>
+
+<div class="startScreen">
+    <h2>Car Racing Game</h2>
+
+    <select id="speedSelect">
+        <option value="3">Easy</option>
+        <option value="5" selected>Medium</option>
+        <option value="8">Hard</option>
+        <option value="12">Extreme</option>
+    </select>
+
+    <br><br>
+
+    <button id="startBtn">Start Game</button>
+
+    <br><br>
+
+    <p>Use ← → Keys To Move</p>
+</div>
+
+<div class="gameArea"></div>
+
+<script src="script.js"></script>
+
+<audio id="crashSound">
+    <source src="crash.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
